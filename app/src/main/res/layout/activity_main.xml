@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/broadcast1Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Audio Downloaded"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+            android:id="@+id/broadcast2Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Image Downloaded"
+            app:layout_constraintTop_toBottomOf="@+id/broadcast1Btn"
+            app:layout_constraintLeft_toLeftOf="@+id/broadcast1Btn"/>
+
+    <Button
+            android:id="@+id/broadcast3Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Status"
+            app:layout_constraintTop_toBottomOf="@+id/broadcast2Btn"
+            app:layout_constraintLeft_toLeftOf="@+id/broadcast2Btn"/>
+
+    <TextView
+            android:id="@+id/broadcast1Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Audio downloaded = 0"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/broadcast3Btn"
+            app:layout_constraintLeft_toLeftOf="@+id/broadcast3Btn"/>
+
+    <TextView
+            android:id="@+id/broadcast2Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Broadcast2"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/broadcast1Tv"
+            app:layout_constraintLeft_toLeftOf="@id/broadcast1Btn"/>
+
+    <TextView
+            android:id="@+id/broadcast3Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Broadcast3"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/broadcast2Tv"
+            app:layout_constraintLeft_toLeftOf="@id/broadcast1Btn"/>
+
+    <TextView
+            android:id="@+id/internetTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internet is connected"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/broadcast3Tv"
+            app:layout_constraintLeft_toLeftOf="@id/broadcast1Btn"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
